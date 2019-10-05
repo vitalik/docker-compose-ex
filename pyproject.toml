@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "docker-compose-ex"
+version = "0.1.0"
+description = "Docker Compose with `extends` option"
+readme = "README.md"
+homepage = "https://github.com/vitalik/docker-compose-ex"
+authors = ["Vitaliy Kucheryaviy <ppr.vitaly@gmail.com>"]
+
+[tool.poetry.scripts]
+docker-compose-ex = 'docker_compose_ex:compose_ext.main'
+
+[tool.poetry.dependencies]
+python = "^3.5"
+pyyaml = "^5.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^3.0"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"

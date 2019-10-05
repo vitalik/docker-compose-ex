@@ -1,0 +1,5 @@
+version: '3.7'
+extends: docker-compose.base.yml
+services:
+  main:
+    command: echo works-from-main

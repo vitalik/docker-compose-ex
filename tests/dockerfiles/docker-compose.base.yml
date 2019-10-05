@@ -1,0 +1,9 @@
+version: '3.7'
+extends: docker-compose.super.yml
+services:
+  main:
+    image: ubuntu:18.04
+    command: echo original
+
+  another:
+    build: .

@@ -1,0 +1,7 @@
+version: '3.7'
+services:
+  main:
+    image: ubuntu:18.04
+    command: echo original
+    # volumes:
+    #  - ./foo:/bar
